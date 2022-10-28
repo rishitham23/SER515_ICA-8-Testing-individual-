@@ -73,7 +73,7 @@ public class urinals {
             while(fl==null) {
                 throw new IOException();
             }
-            File cfl=new File("src/total");
+            File cfl=new File("src/test/total.txt");
             while(cfl==null) {
                 throw new IOException();
             }
@@ -92,7 +92,7 @@ public class urinals {
                 int free=ur.countUrinals(st);
                 ur.writeToFile(opfl,free);
             }
-            FileWriter cw=new FileWriter("src/total");
+            FileWriter cw=new FileWriter("src/test/total.txt");
             while(cw==null) {
                 throw new IOException();
             }
